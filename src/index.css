@@ -44,6 +44,8 @@ nav h1{
   font-weight: 400;
 }
 
+/* Mobile */
+
 nav svg{
   cursor:pointer;
   font-size: clamp(10px, 8vmin, 50px);
@@ -104,4 +106,29 @@ nav svg{
 
 .social-links svg{
   font-size: clamp(10px, 10vmin, 60px);
+}
+
+/* Desktop */
+
+nav h1{
+
+}
+
+.desktop-navlinks{
+  list-style: none;
+  display:flex;
+  justify-content: space-around;
+  width: fit-content;
+}
+
+.desktop-navlinks li{
+  font-size: clamp(5px, 4vmin, 28px);
+  text-transform: uppercase;
+  cursor:pointer;
+  margin: 15px;
+}
+
+.desktop-sociallinks{
+  display:flex;
+  justify-content: flex-end;
 }

@@ -1,10 +1,13 @@
-import React from 'react'
+import React from 'react';
+import DesktopNavLinks from './DesktopNavLinks';
+import DesktopSocialLinks from './DesktopSocialLinks';
 
 const DesktopNav = () => {
     return (
-        <div>
-            
-        </div>
+        <>
+            <DesktopNavLinks />
+            <DesktopSocialLinks />
+        </>
     )
 }
 
