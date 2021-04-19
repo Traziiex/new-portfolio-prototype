@@ -5,11 +5,12 @@
 .Mixed-colorful-fancy-betta-.-4-rgba { color: rgba(89, 1, 1, 1); }
 .Mixed-colorful-fancy-betta-.-5-rgba { color: rgba(12, 12, 12, 1); }*/
 
-@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 *{
   margin: 0;
   padding: 0;
+  font-family: 'Poppins', sans-serif;
 }
 
 a{
@@ -17,8 +18,7 @@ a{
   text-decoration: none;
 }
 
-body {
-  font-family: 'Tajawal', sans-serif;
+body{
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -38,18 +38,23 @@ nav{
   color: white;
   padding: 2vw;
   display:flex;
-  justify-content: space-between;
   align-items: center;
   box-shadow: 0px 6px 10px black;
 }
 
 nav h1{
   text-transform: uppercase;
-  font-size: clamp(10px, 5vmin, 30px);
-  font-weight: 400;
+  font-size: clamp(20px, 3vw, 35px);
+  font-weight: 600;
 }
 
 /* Mobile */
+
+@media only screen and (max-width: 999px) {
+  nav {
+    justify-content: space-between;
+  }
+}
 
 nav svg{
   cursor:pointer;
@@ -115,8 +120,10 @@ nav svg{
 
 /* Desktop */
 
-nav h1{
-  font-size: clamp(20px, 3vw, 35px);
+@media only screen and (min-width: 1000px) {
+  nav {
+    justify-content: space-around;
+  }
 }
 
 .desktop-navlinks{
@@ -136,8 +143,8 @@ nav h1{
 .desktop-sociallinks{
   display:flex;
   list-style: none;
-  width:10%;
-  justify-content: flex-end;
+  width:8%;
+  justify-content: space-around;
 }
 
 .desktop-sociallinks svg{
