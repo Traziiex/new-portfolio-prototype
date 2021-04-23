@@ -32,9 +32,9 @@ const MobileMenu = ({openClose, opened}) => {
             <motion.div className="side-menu" initial={{opacity:0, x:'100%', pointerEvents: 'none'}} animate={opened ? 'in' : 'out'} variants={sideMenuAnim} transition={{duration:0.4, ease:"easeInOut"}}>
                     <Close onClick={openClose}/>
                     <ul className="menu-links">
-                        <motion.li variants={menuItemsAnim} initial={{opacity:0, pointerEvents: 'none'}} animate={opened ? 'in' : 'out'} transition={{duration:dur, delay:0.4}}><Link to="/">Présentation</Link></motion.li>
-                        <motion.li variants={menuItemsAnim} initial={{opacity:0, pointerEvents: 'none'}} animate={opened ? 'in' : 'out'} transition={{duration:dur, delay:0.4*1.2}}><Link to="/mon-parcours">Mon Parcours</Link></motion.li>
-                        <motion.li variants={menuItemsAnim} initial={{opacity:0, pointerEvents: 'none'}} animate={opened ? 'in' : 'out'} transition={{duration:dur, delay:0.4*1.4}}><Link to="/mes-projets">Mes projets</Link></motion.li>
+                        <motion.li variants={menuItemsAnim} initial={{opacity:0, pointerEvents: 'none'}} animate={opened ? 'in' : 'out'} transition={{duration:dur, delay:0.4}}><Link to="/" onClick={openClose}>Présentation</Link></motion.li>
+                        <motion.li variants={menuItemsAnim} initial={{opacity:0, pointerEvents: 'none'}} animate={opened ? 'in' : 'out'} transition={{duration:dur, delay:0.4*1.2}}><Link to="/mon-parcours" onClick={openClose}>Mon Parcours</Link></motion.li>
+                        <motion.li variants={menuItemsAnim} initial={{opacity:0, pointerEvents: 'none'}} animate={opened ? 'in' : 'out'} transition={{duration:dur, delay:0.4*1.4}}><Link to="/mes-projets" onClick={openClose}>Mes projets</Link></motion.li>
                     </ul>
                     <motion.div className="social-links" variants={menuItemsAnim} initial={{opacity:0, pointerEvents: 'none'}} animate={opened ? 'in' : 'out'} transition={{duration:dur, delay:0.4*1.6}}>
                         <LinkedIn />
