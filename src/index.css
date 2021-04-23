@@ -158,7 +158,6 @@ nav svg{
   height: 80vh;
   width: 100vw;
   box-sizing: border-box;
-  border:solid;
   display:flex;
 }
 
@@ -215,6 +214,8 @@ nav svg{
   }
   .presentation-field-container{
     width:100%;
+    justify-content:space-around;
+    height:40%;
   }
   .presentation-field{
     width:80%;
