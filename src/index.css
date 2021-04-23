@@ -50,7 +50,7 @@ nav h1{
 
 /* Mobile */
 
-@media only screen and (max-width: 999px) {
+@media only screen and (max-width: 800px) {
   nav {
     justify-content: space-between;
   }
@@ -120,7 +120,7 @@ nav svg{
 
 /* Desktop */
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 801px) {
   nav {
     justify-content: space-around;
   }
@@ -186,7 +186,7 @@ nav svg{
   margin: 0 10px 0 0;
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 801px) {
   .content-container {
     flex-direction: row;
     justify-content:center;
@@ -206,7 +206,7 @@ nav svg{
   }
 }
 
-@media only screen and (max-width: 999px) {
+@media only screen and (max-width: 800px) {
   .content-container {
     flex-direction: column;
     justify-content:space-around;
