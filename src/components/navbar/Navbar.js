@@ -7,8 +7,8 @@ const Navbar = () => {
         <nav>
             <h1 className='logo-name'>Noah Blanchard</h1>
             <Media queries={{
-                small: "(max-width: 450px)",
-                large: "(min-width: 451px)"
+                small: "(max-width: 520px)",
+                large: "(min-width: 521px)"
             }}>
             {matches => (
             <>
