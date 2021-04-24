@@ -40,6 +40,7 @@ const Presentation = () => {
                         <motion.div className="profile-picture-container" initial={{y:"50%"}} animate={opened ? 'showCard' : 'hideCard'} variants={pictureCardAnimY} transition={{ease:"easeInOut"}}>
                             <motion.div initial={{y:0}} animate={{y:"20%"}} transition={{repeat: Infinity, duration: 1, ease:"easeInOut", repeatType:'reverse'}}><ArrowDown /></motion.div>
                             <motion.img onClick={() => setOpened(!opened)} whileHover={{scale:1.05}} transition={{ease:"easeInOut", duration:0.1}} src={photo} alt='Profile Picture' className="profile-img"></motion.img>
+                            <h2>DECOUVREZ QUI JE SUIS</h2>
                         </motion.div>
                         <motion.div className='presentation-field-container' initial={{y:"-50%"}} animate={opened ? 'showCard' : 'hideCard'} variants={detailCardAnimY} transition={{ease:"easeInOut"}}>
                             <div className="presentation-field"><Study /><h3>Etudiant en Informatique</h3></div>
