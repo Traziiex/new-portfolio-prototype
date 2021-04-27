@@ -38,7 +38,7 @@ const Presentation = () => {
                 {matches.small &&
                     <>
                         <motion.div className="profile-picture-container" initial={{y:"50%"}} animate={opened ? 'showCard' : 'hideCard'} variants={pictureCardAnimY} transition={{ease:"easeInOut"}}>
-                            <motion.div initial={{y:0}} animate={{y:"20%"}} transition={{repeat: Infinity, duration: 1, ease:"easeInOut", repeatType:'reverse'}}><ArrowDown /></motion.div>
+                            <motion.div initial={{y:"-20%"}} animate={{y:"20%"}} transition={{repeat: Infinity, duration: 1, ease:"easeInOut", repeatType:'reverse'}}><ArrowDown /></motion.div>
                             <motion.img onClick={() => setOpened(!opened)} whileHover={{scale:1.05}} transition={{ease:"easeInOut", duration:0.1}} src={photo} alt='Profile Picture' className="profile-img"></motion.img>
                             <h2>DECOUVREZ QUI JE SUIS</h2>
                         </motion.div>
@@ -48,13 +48,14 @@ const Presentation = () => {
                             <div className="presentation-field"><Cake /><h3>19 mars 2002</h3></div>
                             <div className="presentation-field"><Heart /><h3>Passioné d'Informatique</h3></div>
                             <div className="presentation-field"><Location /><h3>IUT Lyon 1</h3></div>
+                            <div className="presentation-field"><h2>En apprendre plus sur moi...</h2></div>
                         </motion.div>
                     </> 
                 }
                 {matches.large && 
                     <>
                         <motion.div className="profile-picture-container" initial={{x:"50%"}} animate={opened ? 'showCard' : 'hideCard'} variants={pictureCardAnimX} transition={{ease:"easeInOut"}}>
-                            <motion.div initial={{y:0}} animate={{y:"20%"}} transition={{repeat: Infinity, duration: 1, ease:"easeInOut", repeatType:'reverse'}}><ArrowDown /></motion.div>
+                            <motion.div initial={{y:"0"}} animate={{y:"50%"}} transition={{repeat: Infinity, duration: 1, ease:"easeInOut", repeatType:'reverse'}}><ArrowDown /></motion.div>
                             <motion.img onClick={() => setOpened(!opened)} whileHover={{scale:1.05}} transition={{ease:"easeInOut", duration:0.1}} src={photo} alt='Profile Picture' className="profile-img"></motion.img>
                             <h2>DECOUVREZ QUI JE SUIS</h2>
                         </motion.div>
@@ -64,6 +65,7 @@ const Presentation = () => {
                             <div className="presentation-field"><Cake /><h3>19 mars 2002</h3></div>
                             <div className="presentation-field"><Heart /><h3>Passioné d'Informatique</h3></div>
                             <div className="presentation-field"><Location /><h3>IUT Lyon 1</h3></div>
+                            <div className="presentation-field"><h2>En apprendre plus sur moi...</h2></div>
                         </motion.div>
                     </>
                 }
