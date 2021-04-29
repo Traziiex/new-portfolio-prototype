@@ -161,6 +161,7 @@ nav svg{
   width: 100vw;
   box-sizing: border-box;
   display:flex;
+  perspective: 4000px;
 }
 
 .profile-picture-container > div > svg {
@@ -188,6 +189,7 @@ nav svg{
   align-items:center;
   flex-direction: column;
   background-color: #709CA7;
+  transform-style: preserve-3d;
 }
 
 .presentation-field-container{
@@ -199,6 +201,7 @@ nav svg{
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  transform-style: preserve-3d;
 }
 
 .presentation-field:nth-child(5){
@@ -252,6 +255,7 @@ nav svg{
   font-size: clamp(10px, 4vmin, 50px);
   margin: 0 10px 0 0;
 }
+
 
 @media only screen and (min-width: 521px) {
   .content-container {

@@ -28,7 +28,7 @@ const MobileMenu = ({openClose, opened}) => {
 
     return (
         <>
-            <motion.div className="side-menu-container" initial={{opacity:0, pointerEvents: 'none'}} animate={opened ? 'in' : 'out'} variants={backgroundAnim} transition={{duration:0.2}}/>
+            <motion.div className="side-menu-container" initial={{opacity:0, pointerEvents: 'none'}} animate={opened ? 'in' : 'out'} variants={backgroundAnim} transition={{duration:0.2}} onClick={openClose}/>
             <motion.div className="side-menu" initial={{opacity:0, x:'100%', pointerEvents: 'none'}} animate={opened ? 'in' : 'out'} variants={sideMenuAnim} transition={{duration:0.4, ease:"easeInOut"}}>
                     <Close onClick={openClose}/>
                     <ul className="menu-links">

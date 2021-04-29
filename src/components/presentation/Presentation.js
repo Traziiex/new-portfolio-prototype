@@ -1,5 +1,5 @@
 import photo from './img/photo.jpg';
-import {AiFillRead as Study, AiFillHeart as Heart, AiFillCaretDown as ArrowDown, AiOutlineRight as ArrowRight, AiOutlineRise as UpLift} from 'react-icons/ai'
+import {AiFillRead as Study, AiFillHeart as Heart, AiFillCaretDown as ArrowDown, AiOutlineRight as ArrowRight, AiOutlineRise as UpLift, AiOutlineClose as Cross} from 'react-icons/ai'
 import { FaBirthdayCake as Cake } from "react-icons/fa";
 import {HiLocationMarker as Location} from 'react-icons/hi'
 
@@ -15,20 +15,28 @@ const Presentation = () => {
     const [opened, setOpened] = useState(false);
 
     const pictureCardAnimX = {
-        showCard: { x:0, pointerEvents: 'auto' },
-        hideCard: { x:"50%"}
+        showCard: { x:0, pointerEvents: 'auto', rotateY:0 },
+        hideCard: { x:"50%", rotateY:0}
     }
     const detailCardAnimX = {
-        showCard: { x:0, pointerEvents: 'auto' },
-        hideCard: { x:"-50%"}
+        showCard: { x:0, pointerEvents: 'auto', rotateY:0 },
+        hideCard: { x:"-50%", rotateY:0}
     }
     const pictureCardAnimY = {
-        showCard: { y:0, pointerEvents: 'auto' },
-        hideCard: { y:"50%"}
+        showCard: { y:0, pointerEvents: 'auto', rotateY:0 },
+        hideCard: { y:"50%", rotateY:0}
     }
     const detailCardAnimY = {
-        showCard: { y:0, pointerEvents: 'auto' },
-        hideCard: { y:"-50%"}
+        showCard: { y:0, pointerEvents: 'auto', rotateY:0 },
+        hideCard: { y:"-50%", rotateY:0}
+    }
+    const pictureButtonAnim = {
+        showCard: { opacity:1, pointerEvents:'auto', rotate:90*2},
+        hideCard: { opacity:1, pointerEvent: 'auto', rotate:0}
+    }
+    const pictureButtonTransition={
+        scale: {duration:0.1, ease:'easeInOut'},
+        rotate: {duration:0.35, type: "spring", stiffness: 200 }
     }
 
     return (
@@ -38,12 +46,12 @@ const Presentation = () => {
             <>
                 {matches.small &&
                     <>
-                        <motion.div className="profile-picture-container" initial={{y:"50%"}} animate={opened ? 'showCard' : 'hideCard'} variants={pictureCardAnimY} transition={{ease:"easeInOut"}}>
+                        <motion.div className="profile-picture-container" initial={{y:"50%", rotateY:-90}} animate={opened ? 'showCard' : 'hideCard'} variants={pictureCardAnimY} transition={{ease:"easeInOut"}}>
                             <motion.div initial={{y:"-20%"}} animate={{y:"20%"}} transition={{repeat: Infinity, duration: 1, ease:"easeInOut", repeatType:'reverse'}}><ArrowDown /></motion.div>
-                            <motion.img onClick={() => setOpened(!opened)} whileHover={{scale:1.05}} transition={{ease:"easeInOut", duration:0.1}} src={photo} alt='Profile Picture' className="profile-img"></motion.img>
+                            <motion.img variants={pictureButtonAnim} initial='hideCard' animate={opened ? 'showCard' : 'hideCard'} onClick={() => setOpened(!opened)} whileHover={{scale:1.05}} transition={pictureButtonTransition} src={photo} alt='Profile Picture' className="profile-img"></motion.img>
                             <h2>DECOUVREZ QUI JE SUIS</h2>
                         </motion.div>
-                        <motion.div className='presentation-field-container' initial={{y:"-50%"}} animate={opened ? 'showCard' : 'hideCard'} variants={detailCardAnimY} transition={{ease:"easeInOut"}}>
+                        <motion.div className='presentation-field-container' initial={{y:"-50%", rotateY:-90}} animate={opened ? 'showCard' : 'hideCard'} variants={detailCardAnimY} transition={{ease:"easeInOut"}}>
                             <div className="presentation-field"><Study /><h3>Etudiant en Informatique</h3></div>
                             <div className="presentation-field"><Location /><h3>IUT Lyon 1</h3></div>
                             <div className="presentation-field"><Cake /><h3>19 mars 2002</h3></div>
@@ -55,12 +63,12 @@ const Presentation = () => {
                 }
                 {matches.large && 
                     <>
-                        <motion.div className="profile-picture-container" initial={{x:"50%"}} animate={opened ? 'showCard' : 'hideCard'} variants={pictureCardAnimX} transition={{ease:"easeInOut"}}>
-                            <motion.div initial={{y:"0"}} animate={{y:"50%"}} transition={{repeat: Infinity, duration: 1, ease:"easeInOut", repeatType:'reverse'}}><ArrowDown /></motion.div>
-                            <motion.img onClick={() => setOpened(!opened)} whileHover={{scale:1.05}} transition={{ease:"easeInOut", duration:0.1}} src={photo} alt='Profile Picture' className="profile-img"></motion.img>
+                        <motion.div className="profile-picture-container" initial={{x:"50%", rotateY:-90}} animate={opened ? 'showCard' : 'hideCard'} variants={pictureCardAnimX} transition={{ease:"easeInOut"}}>
+                            <motion.div initial={{y:"-20%"}} animate={{y:"20%"}} transition={{repeat: Infinity, duration: 1, ease:"easeInOut", repeatType:'reverse'}}><ArrowDown /></motion.div>
+                            <motion.img variants={pictureButtonAnim} initial='hideCard' animate={opened ? 'showCard' : 'hideCard'} onClick={() => setOpened(!opened)} whileHover={{scale:1.05}} transition={pictureButtonTransition} src={photo} alt='Profile Picture' className="profile-img"></motion.img>
                             <h2>DECOUVREZ QUI JE SUIS</h2>
                         </motion.div>
-                        <motion.div className='presentation-field-container' initial={{x:"-50%"}} animate={opened ? 'showCard' : 'hideCard'} variants={detailCardAnimX} transition={{ease:"easeInOut"}}>
+                        <motion.div className='presentation-field-container' initial={{x:"-50%", rotateY:-90}} animate={opened ? 'showCard' : 'hideCard'} variants={detailCardAnimX} transition={{ease:"easeInOut"}}>
                             <div className="presentation-field"><Study /><h3>Etudiant en Informatique</h3></div>
                             <div className="presentation-field"><Location /><h3>IUT Lyon 1</h3></div>
                             <div className="presentation-field"><Cake /><h3>19 mars 2002</h3></div>
