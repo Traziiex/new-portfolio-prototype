@@ -1,3 +1,16 @@
+# Personal Website
+
+Welcome here, this repository is for my very own personal website !
+
+## Visit the website here
+
+https://noahblanchard.fr/
+
+## Work in progress
+
+This website is still a work in progress. I develop it using the awesome React library !
+It's my very first react web app, and I hope that it works okay. It should also be responsive for mobile screens.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
