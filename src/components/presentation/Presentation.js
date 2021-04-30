@@ -46,12 +46,12 @@ const Presentation = () => {
             <>
                 {matches.small &&
                     <>
-                        <motion.div className="profile-picture-container" initial={{y:"50%", rotateY:-90}} animate={opened ? 'showCard' : 'hideCard'} variants={pictureCardAnimY} transition={{ease:"easeInOut"}}>
+                        <motion.div className="profile-picture-container" initial={{y:"50%", rotateY:-90}} animate={opened ? 'showCard' : 'hideCard'} variants={pictureCardAnimY} transition={{ease:"easeInOut", duration: 0.5}}>
                             <motion.div initial={{y:"-20%"}} animate={{y:"20%"}} transition={{repeat: Infinity, duration: 1, ease:"easeInOut", repeatType:'reverse'}}><ArrowDown /></motion.div>
                             <motion.img variants={pictureButtonAnim} initial='hideCard' animate={opened ? 'showCard' : 'hideCard'} onClick={() => setOpened(!opened)} whileHover={{scale:1.05}} transition={pictureButtonTransition} src={photo} alt='Profile Picture' className="profile-img"></motion.img>
                             <h2>DECOUVREZ QUI JE SUIS</h2>
                         </motion.div>
-                        <motion.div className='presentation-field-container' initial={{y:"-50%", rotateY:-90}} animate={opened ? 'showCard' : 'hideCard'} variants={detailCardAnimY} transition={{ease:"easeInOut"}}>
+                        <motion.div className='presentation-field-container' initial={{y:"-50%", rotateY:-90}} animate={opened ? 'showCard' : 'hideCard'} variants={detailCardAnimY} transition={{ease:"easeInOut", duration: 0.5}}>
                             <div className="presentation-field"><Study /><h3>Etudiant en Informatique</h3></div>
                             <div className="presentation-field"><Location /><h3>IUT Lyon 1</h3></div>
                             <div className="presentation-field"><Cake /><h3>19 mars 2002</h3></div>
@@ -63,12 +63,12 @@ const Presentation = () => {
                 }
                 {matches.large && 
                     <>
-                        <motion.div className="profile-picture-container" initial={{x:"50%", rotateY:-90}} animate={opened ? 'showCard' : 'hideCard'} variants={pictureCardAnimX} transition={{ease:"easeInOut"}}>
+                        <motion.div className="profile-picture-container" initial={{x:"50%", rotateY:-90}} animate={opened ? 'showCard' : 'hideCard'} variants={pictureCardAnimX} transition={{ease:"easeInOut", duration: 0.5}}>
                             <motion.div initial={{y:"-20%"}} animate={{y:"20%"}} transition={{repeat: Infinity, duration: 1, ease:"easeInOut", repeatType:'reverse'}}><ArrowDown /></motion.div>
                             <motion.img variants={pictureButtonAnim} initial='hideCard' animate={opened ? 'showCard' : 'hideCard'} onClick={() => setOpened(!opened)} whileHover={{scale:1.05}} transition={pictureButtonTransition} src={photo} alt='Profile Picture' className="profile-img"></motion.img>
                             <h2>DECOUVREZ QUI JE SUIS</h2>
                         </motion.div>
-                        <motion.div className='presentation-field-container' initial={{x:"-50%", rotateY:-90}} animate={opened ? 'showCard' : 'hideCard'} variants={detailCardAnimX} transition={{ease:"easeInOut"}}>
+                        <motion.div className='presentation-field-container' initial={{x:"-50%", rotateY:-90}} animate={opened ? 'showCard' : 'hideCard'} variants={detailCardAnimX} transition={{ease:"easeInOut", duration: 0.5}}>
                             <div className="presentation-field"><Study /><h3>Etudiant en Informatique</h3></div>
                             <div className="presentation-field"><Location /><h3>IUT Lyon 1</h3></div>
                             <div className="presentation-field"><Cake /><h3>19 mars 2002</h3></div>

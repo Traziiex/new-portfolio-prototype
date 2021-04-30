@@ -307,3 +307,70 @@ nav svg{
     z-index: 1;
   }
 }
+
+/* Code Window */
+
+.code-container{
+  background-color:rgba(0, 0, 0, 0.507);
+  position:fixed;
+  top:0;
+  left:0;
+  height:100vh;
+  width:100vw;
+  box-sizing:border-box;
+  z-index: 2;
+  display:flex;
+  justify-content:center;
+  align-items: center;
+}
+
+.code-window{
+  border-radius: 25px;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: clamp(300px,30%, 450px);
+  height: 70%;
+  background-color:rgb(63, 117, 138);
+  box-shadow: 2px 0px 10px black;;
+}
+
+.button-grid{
+  width:80%;
+  height:50%;
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap:5%;
+}
+
+.button-grid > button{
+  border-radius: 5px;
+  height:100%;
+  border:none;
+  background-color:rgb(118, 171, 192);
+  font-weight: 700;
+  cursor:pointer;
+}
+
+.button-grid > button > svg{
+  font-size: clamp(20px, 3vmin, 60px);
+  font-weight: bolder;
+}
+
+.code-window h2{
+  text-transform: uppercase;
+  width: 80%;
+  text-align: center;
+  font-weight: 300;
+  color: white;
+}
+
+.code-window input{
+  font-size: clamp(20px, 3vmin, 60px);
+  width:80%;
+  height:10%;
+  text-align: center;
+  letter-spacing: 10px;
+}
