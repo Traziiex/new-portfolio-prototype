@@ -39,7 +39,7 @@ nav{
   padding: 2vw;
   display:flex;
   align-items: center;
-  box-shadow: 0px 6px 10px black;
+  box-shadow: 0px 2px 2px black;
 }
 
 nav h1{
@@ -267,7 +267,7 @@ nav svg{
     width:40%;
     align-items: center;
     height:70%;
-    box-shadow: 2px 0px 10px black;
+    box-shadow: 2px 0px 4px black;
   }
   .presentation-field{
     display:flex;
@@ -277,7 +277,7 @@ nav svg{
   .profile-picture-container{
     height:70%;
     width:40%;
-    box-shadow: 5px 0px 20px black;
+    box-shadow: 2px 0px 4px black;
     z-index:2;
   }
 }
@@ -292,7 +292,7 @@ nav svg{
     width:80%;
     justify-content:space-around;
     height:40%;
-    box-shadow: 0px 0.5px 5px black;
+    box-shadow: 0px 0.5px 2px black;
   }
   .presentation-field{
     width:100%;
@@ -303,7 +303,7 @@ nav svg{
   .profile-picture-container{
     height:40%;
     width:80%;
-    box-shadow: 0px 2px 5px black;
+    box-shadow: 0px 2px 2px black;
     z-index: 1;
   }
 }
@@ -333,7 +333,7 @@ nav svg{
   width: clamp(300px,30%, 450px);
   height: 70%;
   background-color:rgb(63, 117, 138);
-  box-shadow: 2px 0px 10px black;;
+  box-shadow: 2px 0px 4px black;;
 }
 
 .button-grid{
