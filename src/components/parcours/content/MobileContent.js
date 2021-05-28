@@ -3,7 +3,7 @@ import React from 'react'
 const MobileContent = () => {
     return (
         <div>
-            
+            dzdz
         </div>
     )
 }

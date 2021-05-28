@@ -40,7 +40,7 @@ const Presentation = () => {
     }
 
     return (
-    <div className="content-container">
+    <motion.div className="content-container" transition={{duration:0.6}} exit={{x:"-150%"}}>
         <Media queries={{small: "(max-width: 520px)", large: "(min-width: 521px)"}}>
         {matches => (
             <>
@@ -57,7 +57,7 @@ const Presentation = () => {
                             <div className="presentation-field"><Cake /><h3>19 mars 2002</h3></div>
                             <div className="presentation-field"><Heart /><h3>Passionné d'Informatique</h3></div>
                             <div className="presentation-field"><h3>Ce que je souhaite :</h3><h3>Travailler, apprendre et m'améliorer</h3><UpLift /></div>
-                            <motion.div initial={{scale:1}} whileHover={{scale:1.13}} className="presentation-field"><Link to="/mon-parcours"><motion.h2>En apprendre plus sur moi...</motion.h2><ArrowRight /></Link></motion.div>
+                            <motion.div initial={{scale:1}} whileHover={{scale:1.13}} className="presentation-field"><Link to="/presentation"><motion.h2>En apprendre plus sur moi...</motion.h2><ArrowRight /></Link></motion.div>
                         </motion.div>
                     </> 
                 }
@@ -74,14 +74,14 @@ const Presentation = () => {
                             <div className="presentation-field"><Cake /><h3>19 mars 2002</h3></div>
                             <div className="presentation-field"><Heart /><h3>Passionné d'Informatique</h3></div>
                             <div className="presentation-field"><h3>Ce que je souhaite :</h3><h3>Travailler, apprendre et m'améliorer</h3><UpLift /></div>
-                            <motion.div initial={{scale:1}} whileHover={{scale:1.13}} className="presentation-field"><Link to="/mon-parcours"><motion.h2>En apprendre plus sur moi...</motion.h2><ArrowRight /></Link></motion.div>
+                            <motion.div initial={{scale:1}} whileHover={{scale:1.13}} className="presentation-field"><Link to="/presentation"><motion.h2>En apprendre plus sur moi...</motion.h2><ArrowRight /></Link></motion.div>
                         </motion.div>
                     </>
                 }
             </>
         )}
         </Media>
-    </div>
+    </motion.div>
     )
 }
 

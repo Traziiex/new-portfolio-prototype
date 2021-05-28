@@ -374,3 +374,23 @@ nav svg{
   text-align: center;
   letter-spacing: 10px;
 }
+
+.help-div{
+  color:white;
+  width:80%;
+  display:flex;
+  justify-content: flex-start;
+  align-items: center;
+  max-height:5vh;
+  overflow: hidden;
+}
+
+.help-div > span {
+  overflow: hidden;
+  text-overflow: unset;
+  margin-left:2%;
+}
+
+ .help-div > svg{
+  font-size: clamp(10px, 4vmin, 50px);
+ }

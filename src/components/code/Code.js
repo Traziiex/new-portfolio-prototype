@@ -1,14 +1,24 @@
 import Button from './Button'
-
-import {AiOutlineCheck, AiOutlineClose} from 'react-icons/ai';
+import {motion} from 'framer-motion';
+import {AiOutlineCheck, AiOutlineClose, AiOutlineQuestionCircle} from 'react-icons/ai';
 
 import {useState} from 'react';
 import {useHistory} from 'react-router-dom';
 
 const Code = ({unlockPages}) => {
 
+    const helperVariants = {
+        open:{
+            opacity:1
+        },
+        close:{
+            opacity:0
+        }
+    }
+
     const hist = useHistory();
 
+    const [help, setHelp] = useState(false);
     const [msg, setMsg] = useState("Tapez le code");
     const [code, setCode] = useState("");
 
@@ -27,10 +37,14 @@ const Code = ({unlockPages}) => {
     }
 
     return (
-        <div className="code-container">
+        <motion.div className="code-container"  initial={{opacity:0}} animate={{opacity:1}} exit={{opacity:0}}>
             <div className="code-window">
                 <h2>{msg}</h2>
                 <input readOnly type='password' value={code}></input>
+                <div className="help-div">
+                    <AiOutlineQuestionCircle onClick={() => setHelp(!help)} style={{cursor:"pointer"}}/>
+                    <motion.span initial={{opacity:0}} animate={help ? "open" : "close"} transition={{duration:0.2}} variants={helperVariants}>Ma date de naissance est peut-être la réponse...</motion.span>
+                </div>
                 <div className="button-grid">
                     <Button val={1} event={() => enterCode("1")}/>
                     <Button val={2} event={() => enterCode("2")}/>
@@ -46,7 +60,7 @@ const Code = ({unlockPages}) => {
                     <Button val={<AiOutlineCheck />} event={verify}/>
                 </div>
             </div>
-        </div>
+        </motion.div>
     )
 }
 
