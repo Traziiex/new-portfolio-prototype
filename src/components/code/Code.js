@@ -28,10 +28,13 @@ const Code = ({unlockPages}) => {
     }
     
     const verify = () => {
-        if(code === "190302"){
+        if(code === "190302" || code === "19032002"){
             unlockPages();
         } else {
             setMsg('code faux');
+            if (!help){
+                setHelp(!help);
+            }
         }
         setCode("");
     }
