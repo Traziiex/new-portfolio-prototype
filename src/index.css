@@ -483,7 +483,6 @@ nav svg{
   width:100%;
   height:80vh;
   box-sizing: border-box;
-  border:solid;
   display:flex;
   align-items: center;
   justify-content: center;
@@ -492,7 +491,6 @@ nav svg{
 .drag-container{
   width:90%;
   height: 100%;
-  border:solid;
   display:flex;
   justify-content: center;
   align-items: center;
