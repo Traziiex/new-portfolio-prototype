@@ -3,13 +3,12 @@ import {AiOutlineCheck, AiOutlineClose, AiOutlineQuestionCircle} from 'react-ico
 
 import {useState} from 'react';
 import {useHistory} from 'react-router-dom';
-import Moi from './img/Moi.png';
 
 
-const ImgMoiZoom = ({close}) => {
+const ImgMoiZoom = ({close, image}) => {
     return (
         <motion.div className="code-container"  initial={{opacity:0}} animate={{opacity:1}} exit={{opacity:0}} onClick={close} style={{cursor:"pointer"}}>
-            <img src={Moi} style={{backgroundColor:"white", borderRadius:10}}/>
+            <img src={image} style={{backgroundColor:"white", borderRadius:10}}/>
         </motion.div>
     )
 }
