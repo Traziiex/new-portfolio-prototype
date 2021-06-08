@@ -529,6 +529,11 @@ nav svg{
   min-width: 200px;
 }
 
+.floating-cards{
+  z-index: 4;
+  position:relative;
+}
+
 .drag-container > div > p{
   max-width: 300px;
   text-align: center;

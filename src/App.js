@@ -6,6 +6,7 @@ import {AnimatePresence} from 'framer-motion';
 import Presentation from './components/presentation/Presentation';
 import Parcours from './components/parcours/Parcours';
 import Plus from './components/presentation/Plus'
+import CreationsContainer from './components/creations/CreationsContainer';
 
 function App() {
 
@@ -30,6 +31,9 @@ function App() {
           </Route>
           <Route path="/mon-parcours" exact>
             <Parcours unlocked={unlocked} unlockPages={unlockPages}/>
+          </Route>
+          <Route path="/mes-creations" exact>
+            <CreationsContainer unlocked={unlocked} unlockPages={unlockPages}/>
           </Route>
         </Switch>
       </AnimatePresence>

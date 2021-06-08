@@ -34,7 +34,7 @@ const MobileMenu = ({openClose, opened}) => {
                     <ul className="menu-links">
                         <motion.li variants={menuItemsAnim} initial={{opacity:0, pointerEvents: 'none'}} animate={opened ? 'in' : 'out'} transition={{duration:dur, delay:0.4}}><Link to="/presentation" onClick={openClose}>Présentation</Link></motion.li>
                         <motion.li variants={menuItemsAnim} initial={{opacity:0, pointerEvents: 'none'}} animate={opened ? 'in' : 'out'} transition={{duration:dur, delay:0.4*1.2}}><Link to="/mon-parcours" onClick={openClose}>Mon Parcours</Link></motion.li>
-                        <motion.li variants={menuItemsAnim} initial={{opacity:0, pointerEvents: 'none'}} animate={opened ? 'in' : 'out'} transition={{duration:dur, delay:0.4*1.4}}><Link to="/mes-projets" onClick={openClose}>Mes projets</Link></motion.li>
+                        <motion.li variants={menuItemsAnim} initial={{opacity:0, pointerEvents: 'none'}} animate={opened ? 'in' : 'out'} transition={{duration:dur, delay:0.4*1.4}}><Link to="/mes-creations" onClick={openClose}>Mes créations</Link></motion.li>
                     </ul>
                     <motion.div className="social-links" variants={menuItemsAnim} initial={{opacity:0, pointerEvents: 'none'}} animate={opened ? 'in' : 'out'} transition={{duration:dur, delay:0.4*1.6}}>
                         <a href="https://github.com/Traziiex"><Github /></a>

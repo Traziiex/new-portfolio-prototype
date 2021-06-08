@@ -4,7 +4,7 @@ import {motion} from 'framer-motion'
 
 const MobileContent = ({content}) => {
     return (
-        <div className ="mobile-parcours-container">
+        <motion.div className ="mobile-parcours-container" exit={{x:"-150%"}} transition={{duration:0.6}}>
                         <Card content={content[4]}  sub="La Norvège" years="2002 > 2005"/>
                         <Card  content={content[3]}  sub="La France" years="2005 > 2008"/>
                         <Card  content={content[2]}  sub="Le Danemark (Primaire)" years="2008 > 2013"/>
@@ -14,7 +14,7 @@ const MobileContent = ({content}) => {
                    
                
                 
-        </div>
+        </motion.div>
     )
 }
 

@@ -36,7 +36,7 @@ const PlusPhone = () => {
         <>
         {zoomMoi ? <ImgMoiZoom close={closeZoom} image={Moi}/> : null}
         <motion.div className="plus-content" transition={{duration:0.6}} exit={{x:"-150%"}}>
-            <motion.div initial={{rotateX:"-90deg"}} animate={card1 ? "open" : "collapsed"} transition={{duration:0.3}} variants={cardVariant}>
+            <motion.div animate={card1 ? "open" : "collapsed"} transition={{duration:0.3}} variants={cardVariant}>
                 <h2>Qui suis-je ?</h2>
                 <div onClick={() => setCard1(!card1)} style={{cursor:"pointer"}}>{card1 ? "Voir moins" : "Voir plus"}</div>
                 <p>Je suis Noah Blanchard, un étudiant en informatique plein d'ambitions. Depuis tout petit, je porte un fort intérêt pour tout ce qui touche à l'informatique
@@ -52,7 +52,7 @@ const PlusPhone = () => {
                     à accomplir des tâches dont je ne vois pas le sens et l'intérêt.
                 </p>
             </motion.div >
-            <motion.div initial={{rotateX:"-90deg"}} animate={card2 ? "open" : "collapsed"} transition={{duration:0.3}} variants={cardVariant}>
+            <motion.div animate={card2 ? "open" : "collapsed"} transition={{duration:0.3}} variants={cardVariant}>
                 <h2>Mes passe-temps</h2>
                 <div onClick={() => setCard2(!card2)} style={{cursor:"pointer"}}>{card2 ? "Voir moins" : "Voir plus"}</div>
                 <p>
@@ -76,7 +76,7 @@ const PlusPhone = () => {
                     Je souhaitais seulement que vous connaissiez mieux la personne dont vous être en train de consulter le site personnel !
                 </p>
             </motion.div>
-            <motion.div initial={{rotateX:"-90deg"}} animate={card3 ? "open" : "collapsed"} transition={{duration:0.3}} variants={cardVariant}>
+            <motion.div animate={card3 ? {height:'auto'} : "collapsed"} transition={{duration:0.3}} variants={cardVariant}>
                 <h2>Ma personnalité en carte mentale</h2>
                 <div onClick={() => setCard3(!card3)} style={{cursor:"pointer"}}>{card3 ? "Voir moins" : "Voir plus"}</div>
                 <img src={Moi} onClick={() => setZoomMoi(!zoomMoi)}/>
