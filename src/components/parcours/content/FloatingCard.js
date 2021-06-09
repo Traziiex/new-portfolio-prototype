@@ -19,15 +19,11 @@ const FloatingCard = ({constraintsRef, years, content, sub, toFront}) => {
 
     const cVariant ={
         open:{
-            height:"500px",
-            minHeight:'400px',
-            minWidth:"400px",
-            maxHeight:"700px"
+            width:"400px",
+            height:"500px"
         },
         close:{
-            maxHeight:"200px",
-            minWidth:"250px",
-            maxWidth:"250px"
+            height:"250px"
         }
     }
 

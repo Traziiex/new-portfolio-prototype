@@ -523,7 +523,6 @@ nav svg{
   background-color: #709CA7;
   position:absolute;
   z-index: 0;
-  max-width: 300px;
   border-radius: 10px;
   box-shadow: 2px 0px 2px black;;
   min-width: 200px;
@@ -535,7 +534,7 @@ nav svg{
 }
 
 .drag-container > div > p{
-  max-width: 300px;
+  max-width: 400px;
   text-align: center;
   overflow: hidden;
   text-align: justify;
@@ -586,4 +585,108 @@ nav svg{
   border-radius: 10px;
   cursor: pointer;
   box-shadow: 1px 0 1px black;
+}
+
+/* Creations */
+
+/* Desk */ 
+@media only screen and (min-width: 521px) {
+  .creation-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 85vh;
+
+  }
+  .creations-musicales, .creations-infos{
+    height: 85%;
+    border-radius: 10px;
+    background-color: teal;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .creations-musicales{
+    width:80%;
+  }
+
+  .music-container{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    width:100%;
+    row-gap: 2%;
+  }
+
+  .creations-musicales > svg {
+    padding: 2%;
+  }
+  .creations-infos{
+    width:16%;
+  }
+  .creations-infos > svg{
+    padding: 2%;
+  }
+  iframe{
+    height: 30vmin;
+    width: 30vmin;
+    border-radius: 10px;
+    transition: 0.2s;
+  }
+  iframe:hover{
+    transform: scale(1.05);
+  }
+}
+
+/* Mobile */
+
+@media only screen and (max-width: 520px) {
+  .creation-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+  }
+  .creations-musicales, .creations-infos{
+    height: 85%;
+    border-radius: 10px;
+    background-color: teal;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .creations-musicales{
+    width:80%;
+  }
+
+  .music-container{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    width:100%;
+    row-gap: 2%;
+  }
+
+  .creations-musicales > svg {
+    padding: 2%;
+  }
+  .creations-infos{
+    width:16%;
+  }
+  .creations-infos > svg{
+    padding: 2%;
+  }
+  iframe{
+    height: 30vmin;
+    width: 30vmin;
+    border-radius: 10px;
+    transition: 0.2s;
+  }
+  iframe:hover{
+    transform: scale(1.05);
+  }
 }
