@@ -39,16 +39,15 @@ const PlusPhone = () => {
             <motion.div animate={card1 ? "open" : "collapsed"} transition={{duration:0.3}} variants={cardVariant}>
                 <h2>Qui suis-je ?</h2>
                 <div onClick={() => setCard1(!card1)} style={{cursor:"pointer"}}>{card1 ? "Voir moins" : "Voir plus"}</div>
-                <p>Je suis Noah Blanchard, un étudiant en informatique plein d'ambitions. Depuis tout petit, je porte un fort intérêt pour tout ce qui touche à l'informatique
-                    et particulèrement les ordinateurs. Ces machines me fascinent depuis tout petit : j'ai vite été attiré par l'aspect vidéo-ludique proposée par celles-ci.
-                    Mais avec les années qui ont passé, j'ai commencé à m'intéresser de façon générale à l'informatique. Plus je passais de temps plus je découvrais de nouvelles
-                    choses, et il était juste impossible que je passe à côté du développement.
-                    J'ai commencé petit à petit à m'y intéresser et à apprendre en autodidacte grâce à des tutoriels sur Internet. Mon intérêt pour l'informatique est ce qui a
-                    déterminé mon choix d'études, je souhaite poursuive mes études sur cinq ans afin d'être formé comme ingénieur en informatique.
+                <p>Je suis Noah Blanchard, un étudiant en informatique plein d'ambitions. Dès mon plus jeune age j'ai portéun for intérêt pour l'informatique, et particulièrement
+                    les ordinateurs qui sont des machines qui me facinent depuis longtemps. C'est premièrement l'aspect vidéo-ludique proposé par les ordinateurs qui captait mon
+                    attention mais rapidement, je me suis intéressé à toutes les facettes de l'informatique en passant par le montage photo ou même la composition de musique. J'ai
+                    toujours adoré toucher à tout et explorer ce monde qui se trouvait à portée de main. Un jour est donc arrivé où je me suis intéressé à la programmation et au
+                    développement, et c'est ce domaine qui m'a guidé vers moins choix d'études.
                 </p>
                 <p>
-                    Je suis actuellement âgé de {age} ans et mon but est de, plus tard, pouvoir travailler dans une domaine qui me plaît et qui m'intéresse afin que
-                    mon temps passé au travail soit avant tout un moment intéressants et attirant. Je souhaite ne pas passer ma vie dans un bureau qui ne me plaît pas
+                    Je suis actuellement âgé de {age} ans et mon but est de, plus tard, pouvoir travailler dans un domaine qui me plaît et qui m'intéresse afin que
+                    mon temps passé au travail soit avant tout un moment intéressant et attirant. Je souhaite ne pas passer ma vie dans un bureau qui ne me plaît pas
                     à accomplir des tâches dont je ne vois pas le sens et l'intérêt.
                 </p>
             </motion.div >

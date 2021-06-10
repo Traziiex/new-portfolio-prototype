@@ -23,7 +23,8 @@ const FloatingCard = ({constraintsRef, years, content, sub, toFront}) => {
             height:"500px"
         },
         close:{
-            height:"250px"
+            height:"100px",
+            width:"100px"
         }
     }
 

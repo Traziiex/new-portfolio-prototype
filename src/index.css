@@ -484,13 +484,14 @@ nav svg{
   height:80vh;
   box-sizing: border-box;
   display:flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
 }
 
 .drag-container{
-  width:90%;
-  height: 100%;
+  border:solid rgba(0, 0, 0, 0.192);
+  width:95%;
+  height: 85%;
   display:flex;
   justify-content: center;
   align-items: center;
@@ -533,6 +534,15 @@ nav svg{
   position:relative;
 }
 
+.floating-cards > h2{
+  font-size: 20px;
+  pointer-events: none;
+}
+.floating-cards > h3{
+  font-size: 15px;
+  pointer-events: none;
+}
+
 .drag-container > div > p{
   max-width: 400px;
   text-align: center;
@@ -542,7 +552,7 @@ nav svg{
 
 .drag-container > div > button {
   width:70%;
-  height:5vh;
+  height:3vh;
   border:none;
   border-radius: 10px;
   cursor: pointer;
@@ -597,12 +607,21 @@ nav svg{
     justify-content: space-evenly;
     align-items: center;
     height: 85vh;
+    width:80%;
+    margin: 0 auto;
 
   }
   .creations-musicales, .creations-infos{
     height: 85%;
     border-radius: 10px;
-    background-color: teal;
+    background-color: #3e717e;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .creations-musicales > div{
+    height: 80%;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -613,11 +632,31 @@ nav svg{
   }
 
   .music-container{
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    justify-items: center;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    overflow-y: scroll;
     width:100%;
     row-gap: 2%;
+  }
+
+  .creations-infos > div{
+    height: 80%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .info-container{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    overflow-y: scroll;
+    width:100%;
+    row-gap: 2%;
+    height: 100%;
   }
 
   .creations-musicales > svg {
@@ -630,13 +669,40 @@ nav svg{
     padding: 2%;
   }
   iframe{
-    height: 30vmin;
-    width: 30vmin;
+    margin:2%;
+    width:15vw;
+    height: 15vw;
+    border-radius: 10px;
+    transition: 0.2s;
+    flex-basis: 15vw;
+  }
+  iframe:hover{
+    transform: scale(1.02);
+  }
+  .info-card{
+    flex-basis:25%;
+    background-color: #709CA7;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    margin: 2%;
+    cursor:auto;
     border-radius: 10px;
     transition: 0.2s;
   }
-  iframe:hover{
-    transform: scale(1.05);
+  .info-card:hover{
+    transform: scale(1.02);
+  }
+  .info-card ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+  }
+  .info-card img{
+    max-height: 65%;
+    border-radius: 10px;
   }
 }
 
