@@ -42,24 +42,27 @@ const PlusDesktop = () => {
             <motion.div initial={{rotateX:"-90deg", opacity:0}} animate={{rotateX:0, opacity:1}} transition={{duration:0.3, type: "spring", stiffness: 100, delay:0.2}}>
                 <h2>Mes passe-temps</h2>
                 <p>
-                    L'informatique n'est évidemment pas la seule chose qui m'anime. J'aime diverses choses, et je souhaite vous en faire part dans le paragraphe qui suit.
+                    L'informatique n'est évidemment pas le seul sujet qui m'anime, et je souhaite vous en faire part de certains de mes centres d'intérêts dans le paragraphe qui suit.
                 </p>
                 <p>
-                    S'il y a quelque chose qui porte une place importante dans mon coeur, c'est la musique. Depuis tout petit, j'aime quand il y a du bruit, mais pas un bruit
-                    forcément déstructuré et désagréable, non. J'aime quand il y a de la vie, et quoi de plus ennuyeux qu'une pièce vide sans aucun son pour peupler une solitude et un vide étouffant.
-                    La musique est quelque chose qui a la capacité de faire ressentir des choses, de faire voyager, alors que c'est finalement seulement une suite de son mis ensemble
-                    de la bonne manière. Je trouve cela incroyable comment un certain choix de notes, d'accords et de succession de fréquences peuvent transmettre une émotion bien précise
-                    et recherchée par l'artiste. La musique est finalement seulement une vibration qui se propage avec comme support l'air, et pourtant c'est aussi un langage à part
-                    entière. Un langage universel, compris par tous. J'ai moi-même beaucoup écouté de musique, aux genres divers et variés en passant par la musique classique, électronique ou même classico-électronique...
+                    S'il y a quelque chose qui porte une place importante dans mon coeur, c'est la musique. Jeune enfant, j'aimais quand il y avait du bruit, mais pas forcément un bruit
+                    destructuré voire désagréable. Ce que j'aime, c'est quand il y a de la vie, et selon moi il n'y a rien de plus ennuyeux qu'une pièce apathique sans aucun son pour peupler un vide étouffant.
+                    La musique peut faire ressentir beaucoup d'émotion et a la capacité de faire voyager celui qui l'écoute. Et pourtant, la musique est finalement une simple suite de son, d'accords et de fréquence
+                    dont la succession parfaitement pensée par le compositeur a pour vertu de transmettre des sensations uniques et marquantes. Alors que le son est à lui seul une simple vibration des
+                    molécules dans l'air, la musique est un art qui a su apprivoisé ce phénomèene physique pour le métamorphoser en quelque-chose d'une beauté immense.
+                    La musique est en réalité un langage à part entière, universel, compris de tous.
+
+                    </p>
+                <p>J'ai moi-même beaucoup écouté de musique, aux genres divers et variés en passant par la musique classique, électronique ou même classico-électronique...
                     le rap, le rock ou même le blues. Je n'ai pas qu'écouter, j'ai aussi fait et créé en jouant dans des orchestres ou en composant chez moi, sur mon ordinateur.
                 </p>
                 <p>
-                    Le sport a lui aussi une partie imposante dans ma vie. J'ai toujours aimé bouger, courir sauter et me défouler. Les sports que j'ai le plus pratiqués et qui me plaise le plus sont
+                    Le sport a lui aussi une place imposante dans ma vie. J'ai toujours aimé bouger, courir sauter et me défouler. Les sports que j'ai le plus pratiqués et qui me plaise le plus sont
                     le tennis et le volleyball. 
                 </p>
                 <p>
                     Je porte un intérêt pour encore bien des choses comme le voyage ou le cinéma mais tout citer n'est, je pense, pas utile sur ce site.
-                    Le but de ces textes est bien évidemment que vous connaissiez mieux la personne dont vous consultez actuellement le site !
+                    Le but de ces textes est que vous connaissiez mieux la personne dont vous consultez actuellement le site !
                 </p>
             </motion.div>
             <motion.div initial={{rotateX:"-90deg", opacity:0}} animate={{rotateX:0, opacity:1}} transition={{duration:0.3, type: "spring", stiffness: 100, delay:0.4}}>

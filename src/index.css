@@ -534,6 +534,10 @@ nav svg{
   position:relative;
 }
 
+.floating-cards > p {
+  pointer-events: none;
+}
+
 .floating-cards > h2{
   font-size: 20px;
   pointer-events: none;
