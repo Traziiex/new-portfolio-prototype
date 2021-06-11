@@ -55,7 +55,7 @@ const PlusPhone = () => {
                 <h2>Mes passe-temps</h2>
                 <div onClick={() => setCard2(!card2)} style={{cursor:"pointer"}}>{card2 ? "Voir moins" : "Voir plus"}</div>
                 <p>
-                    L'informatique n'est évidemment pas le seul sujet qui m'anime, et je souhaite vous en faire part de certains de mes centres d'intérêts dans le paragraphe qui suit.
+                    L'informatique n'est évidemment pas le seul sujet qui m'anime, et je souhaite vous faire part de certains de mes centres d'intérêts dans le paragraphe qui suit.
                 </p>
                 <p>
                     S'il y a quelque chose qui porte une place importante dans mon coeur, c'est la musique. Jeune enfant, j'aimais quand il y avait du bruit, mais pas forcément un bruit

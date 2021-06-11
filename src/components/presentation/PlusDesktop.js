@@ -42,7 +42,7 @@ const PlusDesktop = () => {
             <motion.div initial={{rotateX:"-90deg", opacity:0}} animate={{rotateX:0, opacity:1}} transition={{duration:0.3, type: "spring", stiffness: 100, delay:0.2}}>
                 <h2>Mes passe-temps</h2>
                 <p>
-                    L'informatique n'est évidemment pas le seul sujet qui m'anime, et je souhaite vous en faire part de certains de mes centres d'intérêts dans le paragraphe qui suit.
+                    L'informatique n'est évidemment pas le seul sujet qui m'anime, et je souhaite vous faire part de certains de mes centres d'intérêts dans le paragraphe qui suit.
                 </p>
                 <p>
                     S'il y a quelque chose qui porte une place importante dans mon coeur, c'est la musique. Jeune enfant, j'aimais quand il y avait du bruit, mais pas forcément un bruit
